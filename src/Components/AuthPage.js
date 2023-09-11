@@ -1,26 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./AuthPage.module.css";
 
 const AuthPage = () => {
-  const [slide, setSlide] = useState(false);
-
   return (
-    <div className={`${styles.pageWrapper} ${slide ? styles.slide : ""}`}>
-      <div className={styles.loginForm}>
+    <div className={styles.pageWrapper}>
+      <div className={`${styles.form} ${styles.loginForm}`}>
         <h2>Login</h2>
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button className={styles.button} onClick={() => setSlide(!slide)}>
-          Go to Signup
-        </button>
+        <input
+          className="form-control my-2"
+          type="text"
+          placeholder="Username"
+        />
+        <input
+          className="form-control my-2"
+          type="password"
+          placeholder="Password"
+        />
+        <button className="btn btn-primary mt-2">Login</button>
       </div>
-      <div className={styles.signupForm}>
+      <div className={`${styles.form} ${styles.signupForm}`}>
         <h2>Signup</h2>
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button className={styles.button} onClick={() => setSlide(!slide)}>
-          Go to Login
-        </button>
+        <input
+          className="form-control my-2"
+          type="text"
+          placeholder="Username"
+        />
+        <input
+          className="form-control my-2"
+          type="password"
+          placeholder="Password"
+        />
+        <button className="btn btn-primary mt-2">Signup</button>
       </div>
     </div>
   );

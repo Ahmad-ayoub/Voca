@@ -1,0 +1,32 @@
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.pageWrapper {
+  animation: slideRight 1s forwards;
+  display: flex;
+  height: 100vh;
+}
+
+.form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  background: white;
+  width: 50%;
+}
+
+.signupForm {
+  background: lightblue;
+  width: 50%;
+}

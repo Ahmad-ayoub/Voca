@@ -1,6 +1,6 @@
 import React from "react";
-import "./Components/AuthPage.css";
-import AuthPage from "./AuthPage";
+import "./Components/AuthPage.module.css";
+import AuthPage from "./Components/AuthPage";
 
 function App() {
   return (
