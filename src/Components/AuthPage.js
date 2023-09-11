@@ -16,7 +16,9 @@ const AuthPage = () => {
           type="password"
           placeholder="Password"
         />
-        <button className="btn btn-primary mt-2">Login</button>
+        <button className="btn btn-primary mt-2 rounded-pill active">
+          Login
+        </button>
       </div>
       <div className={`${styles.form} ${styles.signupForm}`}>
         <h2>Signup</h2>
@@ -30,7 +32,9 @@ const AuthPage = () => {
           type="password"
           placeholder="Password"
         />
-        <button className="btn btn-primary mt-2">Signup</button>
+        <button className="btn btn-primary mt-2 rounded-pill active">
+          Signup
+        </button>
       </div>
     </div>
   );

@@ -30,3 +30,7 @@
   background: lightblue;
   width: 50%;
 }
+
+.button {
+  btn btn-primary mt-2 rounded-pill active
+}
