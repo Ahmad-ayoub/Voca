@@ -23,7 +23,7 @@ const AuthPage = () => {
       <div className={`${styles.form} ${styles.signupForm}`}>
         <h2>Signup</h2>
         <input
-          className="form-control my-2"
+          className="form-control mb-2 my-2"
           type="text"
           placeholder="Username"
         />
