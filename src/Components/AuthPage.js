@@ -1,18 +1,17 @@
 import React from "react";
-import styles from "./AuthPage.module.css";
 
 const AuthPage = () => {
   return (
-    <div className={styles.pageWrapper}>
-      <div className={`${styles.form} ${styles.loginForm}`}>
+    <div className="pageWrapper">
+      <div className="form loginForm">
         <h2>Login</h2>
         <input
-          className="form-control my-2"
+          className="form-control loginBtns"
           type="text"
           placeholder="Username"
         />
         <input
-          className="form-control my-2"
+          className="form-control loginBtns"
           type="password"
           placeholder="Password"
         />
@@ -20,15 +19,15 @@ const AuthPage = () => {
           Login
         </button>
       </div>
-      <div className={`${styles.form} ${styles.signupForm}`}>
+      <div className="form signupForm">
         <h2>Signup</h2>
         <input
-          className="form-control mb-2 my-2"
+          className="form-control signupBtns"
           type="text"
           placeholder="Username"
         />
         <input
-          className="form-control my-2"
+          className="form-control signupBtns"
           type="password"
           placeholder="Password"
         />
