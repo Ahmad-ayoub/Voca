@@ -7,6 +7,9 @@
   }
 }
 
+.appTitle {
+}
+
 .pageWrapper {
   animation: slideRight 1s forwards;
   display: flex;
@@ -28,6 +31,7 @@
 
 .loginBtns {
   margin-bottom: 10px;
+  width: 50%;
 }
 
 .signupForm {
@@ -37,4 +41,5 @@
 
 .signupBtns {
   margin-bottom: 10px;
+  width: 50%;
 }
