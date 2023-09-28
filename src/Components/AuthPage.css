@@ -8,6 +8,10 @@
 }
 
 .appTitle {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  top: 10px;
 }
 
 .pageWrapper {
