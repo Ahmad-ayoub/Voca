@@ -29,7 +29,8 @@
 }
 
 .loginForm {
-  background: white;
+  background: white url("../Images/doodle_page.jpg") no-repeat center center;
+  background-size: cover;
   width: 50%;
 }
 
@@ -39,7 +40,9 @@
 }
 
 .signupForm {
-  background: lightblue;
+  background: lightblue url("../Images/doodle_page_2.jpg") no-repeat center
+    center;
+  background-size: cover;
   width: 50%;
 }
 
