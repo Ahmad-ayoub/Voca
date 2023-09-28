@@ -1,15 +1,10 @@
 import React from "react";
-import myimage from "../Images/doodle_page.jpg";
-import myimage2 from "../Images/doodle_page_2.jpg";
 
 const AuthPage = () => {
   return (
     <div className="pageWrapper">
       <h1 className="appTitle">Voca</h1>
-      <div
-        className="form loginForm"
-        style={{ backgroundImage: `url(${myimage})` }}
-      >
+      <div className="form loginForm">
         <h2>Login</h2>
         <input
           className="form-control loginBtns"
@@ -26,10 +21,7 @@ const AuthPage = () => {
         </button>
       </div>
 
-      <div
-        className="form signupForm"
-        style={{ backgroundImage: `url(${myimage2})` }}
-      >
+      <div className="form signupForm">
         <h2>Signup</h2>
         <input
           className="form-control signupBtns"
