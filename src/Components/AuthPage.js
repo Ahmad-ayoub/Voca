@@ -1,6 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 const AuthPage = () => {
+  const [name, setName] = useState();
+  const [username, setUserName] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const [birthdate, setBirthDate] = useState();
+
+  const getName = (e) => {
+    console.log("Name has been added", e.target.value);
+    setName(e.target.value);
+  };
+
+  const getUserName = (e) => {
+    console.log("Name has been added", e.target.value);
+    setUserName(e.target.value);
+  };
+
+  const getEmail = (e) => {
+    console.log("Name has been added", e.target.value);
+    setEmail(e.target.value);
+  };
+
+  const getPassword = (e) => {
+    console.log("Name has been added", e.target.value);
+    setPassword(e.target.value);
+  };
+
+  const getBirthDate = (e) => {
+    console.log("Name has been added", e.target.value);
+    setBirthDate(e.target.value);
+  };
+
   return (
     <div className="pageWrapper">
       <h1 className="appTitle">Voca</h1>
