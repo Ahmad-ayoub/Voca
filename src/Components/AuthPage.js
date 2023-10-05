@@ -41,11 +41,15 @@ const AuthPage = () => {
           className="form-control loginBtns"
           type="text"
           placeholder="Username"
+          onChange={getUserName}
+          required
         />
         <input
           className="form-control loginBtns"
           type="password"
           placeholder="Password"
+          onChange={getPassword}
+          required
         />
         <button className="btn btn-primary mt-2 rounded-pill active">
           Login
@@ -58,23 +62,36 @@ const AuthPage = () => {
           className="form-control signupBtns"
           type="text"
           placeholder="Name"
+          onChange={getName}
+          required
         />
         <input
           className="form-control signupBtns"
           type="text"
           placeholder="Username"
+          onChange={getUserName}
+          required
         />
         <input
           className="form-control signupBtns"
           type="text"
           placeholder="Email"
+          onChange={getEmail}
+          required
         />
         <input
           className="form-control signupBtns"
           type="password"
           placeholder="Password"
+          onChange={getPassword}
+          required
         />
-        <input className="form-control signupBtns" type="date" />
+        <input
+          className="form-control signupBtns"
+          type="date"
+          onChange={getBirthDate}
+          required
+        />
         <button className="btn btn-primary mt-2 rounded-pill active">
           Signup
         </button>
