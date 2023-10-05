@@ -49,7 +49,20 @@ const AuthPage = () => {
       });
   };
 
-  const 
+  const registerUser = (event) => {
+    event.preventDefault();
+    axios
+      .post("/Register", { name, username, email, password, birthdate })
+      .thn((response) => {
+        console.log(response.data.message);
+        getUserName(response.data.message);
+        setMessage("You Registered");
+      })
+      .catch((error) => {
+        console.log(error);
+        setMessage("Failed to log in. Please check your credentials.");
+      });
+  };
 
   return (
     <div className="pageWrapper">
@@ -70,7 +83,10 @@ const AuthPage = () => {
           onChange={getPassword}
           required
         />
-        <button className="btn btn-primary mt-2 rounded-pill active">
+        <button
+          className="btn btn-primary mt-2 rounded-pill active"
+          onClick={loginUser}
+        >
           Login
         </button>
       </div>
