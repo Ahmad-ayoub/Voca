@@ -56,7 +56,7 @@ const AuthPage = () => {
       .thn((response) => {
         console.log(response.data.message);
         getUserName(response.data.message);
-        setMessage("You Registered");
+        setMessage("You Registered!");
       })
       .catch((error) => {
         console.log(error);
@@ -89,6 +89,7 @@ const AuthPage = () => {
         >
           Login
         </button>
+        <p>{message}</p>
       </div>
 
       <div className="form signupForm">
@@ -127,9 +128,13 @@ const AuthPage = () => {
           onChange={getBirthDate}
           required
         />
-        <button className="btn btn-primary mt-2 rounded-pill active">
+        <button
+          className="btn btn-primary mt-2 rounded-pill active"
+          onClick={registerUser}
+        >
           Signup
         </button>
+        <p>{message}</p>
       </div>
     </div>
   );
