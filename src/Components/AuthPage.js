@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const AuthPage = () => {
   const [name, setName] = useState();
@@ -6,6 +7,7 @@ const AuthPage = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [birthdate, setBirthDate] = useState();
+  const [message, setMessage] = useState();
 
   const getName = (e) => {
     console.log("Name has been added", e.target.value);
@@ -31,6 +33,23 @@ const AuthPage = () => {
     console.log("Name has been added", e.target.value);
     setBirthDate(e.target.value);
   };
+
+  const loginUser = (event) => {
+    event.preventDefault();
+    axios
+      .post("/Login", { username, password })
+      .then((response) => {
+        console.log(response.data.message);
+        getUserName(response.data.message);
+        setMessage("You logged in!");
+      })
+      .catch((error) => {
+        console.log(error);
+        setMessage("Failed to log in. Please check your credentials.");
+      });
+  };
+
+  const 
 
   return (
     <div className="pageWrapper">
