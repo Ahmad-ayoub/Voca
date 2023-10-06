@@ -77,6 +77,13 @@ const AuthPage = () => {
           required
         />
         <input
+          className="form-control signupBtns"
+          type="text"
+          placeholder="email"
+          onChange={getEmail}
+          required
+        />
+        <input
           className="form-control loginBtns"
           type="password"
           placeholder="Password"
