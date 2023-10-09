@@ -37,7 +37,7 @@ const AuthPage = () => {
   const loginUser = (event) => {
     event.preventDefault();
     axios
-      .post("/Login", { username, password })
+      .post("/login", { username, password })
       .then((response) => {
         console.log(response.data.message);
         getUserName(response.data.message);
@@ -52,7 +52,7 @@ const AuthPage = () => {
   const registerUser = (event) => {
     event.preventDefault();
     axios
-      .post("/Register", { name, username, email, password, birthdate })
+      .post("/register", { name, username, email, password, birthdate })
       .thn((response) => {
         console.log(response.data.message);
         getUserName(response.data.message);
