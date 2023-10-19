@@ -52,8 +52,14 @@ const AuthPage = () => {
   const registerUser = (event) => {
     event.preventDefault();
     axios
-      .post("/register", { name, username, email, password, birthdate })
-      .thn((response) => {
+      .post("http://localhost:5000/register", {
+        name,
+        username,
+        email,
+        password,
+        birthdate,
+      })
+      .then((response) => {
         console.log(response.data.message);
         getUserName(response.data.message);
         setMessage("You Registered!");
