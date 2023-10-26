@@ -52,7 +52,7 @@ const AuthPage = () => {
   const registerUser = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:5000/register", {
+      .post("/register", {
         name,
         username,
         email,
