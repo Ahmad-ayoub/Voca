@@ -15,22 +15,22 @@ const AuthPage = () => {
   };
 
   const getUserName = (e) => {
-    console.log("Name has been added", e.target.value);
+    console.log("Username has been added", e.target.value);
     setUserName(e.target.value);
   };
 
   const getEmail = (e) => {
-    console.log("Name has been added", e.target.value);
+    console.log("Email has been added", e.target.value);
     setEmail(e.target.value);
   };
 
   const getPassword = (e) => {
-    console.log("Name has been added", e.target.value);
+    console.log("Password has been added", e.target.value);
     setPassword(e.target.value);
   };
 
   const getBirthDate = (e) => {
-    console.log("Name has been added", e.target.value);
+    console.log("Birthdate has been added", e.target.value);
     setBirthDate(e.target.value);
   };
 
