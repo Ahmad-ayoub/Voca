@@ -61,7 +61,6 @@ const AuthPage = () => {
       })
       .then((response) => {
         console.log(response.data.message);
-        // getUserName(response.data.message);
         setMessage("You Registered!");
       })
       .catch((error) => {
