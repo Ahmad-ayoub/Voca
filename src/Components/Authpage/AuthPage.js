@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const AuthPage = () => {
@@ -8,6 +9,7 @@ const AuthPage = () => {
   const [password, setPassword] = useState();
   const [birthdate, setBirthDate] = useState();
   const [message, setMessage] = useState();
+  const navigate = useNavigate();
 
   const getName = (e) => {
     console.log("Name has been added", e.target.value);
@@ -42,6 +44,7 @@ const AuthPage = () => {
         console.log(response.data.message);
         getUserName(response.data.message);
         setMessage("You logged in!");
+        navigate("/MainPage"); // This will navigate to the MainPage upon successful login
       })
       .catch((error) => {
         console.log(error);
