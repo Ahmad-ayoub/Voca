@@ -73,83 +73,85 @@ const AuthPage = () => {
   };
 
   return (
-    <div className="pageWrapper">
-      <h1 className="appTitle">Voca</h1>
-      <div className="form loginForm">
-        <h2>Login</h2>
-        <input
-          className="form-control loginBtns"
-          type="text"
-          placeholder="Username"
-          onChange={getUserName}
-          required
-        />
-        <input
-          className="form-control signupBtns"
-          type="text"
-          placeholder="email"
-          onChange={getEmail}
-          required
-        />
-        <input
-          className="form-control loginBtns"
-          type="password"
-          placeholder="Password"
-          onChange={getPassword}
-          required
-        />
-        <button
-          className="btn btn-primary mt-2 rounded-pill active"
-          onClick={loginUser}
-        >
-          Login
-        </button>
-        <p>{message}</p>
-      </div>
+    <div>
+      <div className="pageWrapper">
+        <h1 className="appTitle">Voca</h1>
+        <div className="form loginForm">
+          <h2>Login</h2>
+          <input
+            className="form-control loginBtns"
+            type="text"
+            placeholder="Username"
+            onChange={getUserName}
+            required
+          />
+          <input
+            className="form-control signupBtns"
+            type="text"
+            placeholder="email"
+            onChange={getEmail}
+            required
+          />
+          <input
+            className="form-control loginBtns"
+            type="password"
+            placeholder="Password"
+            onChange={getPassword}
+            required
+          />
+          <button
+            className="btn btn-primary mt-2 rounded-pill active"
+            onClick={loginUser}
+          >
+            Login
+          </button>
+          <p>{message}</p>
+        </div>
 
-      <div className="form signupForm">
-        <h2>Signup</h2>
-        <input
-          className="form-control signupBtns"
-          type="text"
-          placeholder="Name"
-          onChange={getName}
-          required
-        />
-        <input
-          className="form-control signupBtns"
-          type="text"
-          placeholder="Username"
-          onChange={getUserName}
-          required
-        />
-        <input
-          className="form-control signupBtns"
-          type="text"
-          placeholder="Email"
-          onChange={getEmail}
-          required
-        />
-        <input
-          className="form-control signupBtns"
-          type="password"
-          placeholder="Password"
-          onChange={getPassword}
-          required
-        />
-        <input
-          className="form-control signupBtns"
-          type="date"
-          onChange={getBirthDate}
-          required
-        />
-        <button
-          className="btn btn-primary mt-2 rounded-pill active"
-          onClick={registerUser}
-        >
-          Signup
-        </button>
-        <p>{message}</p>
+        <div className="form signupForm">
+          <h2>Signup</h2>
+          <input
+            className="form-control signupBtns"
+            type="text"
+            placeholder="Name"
+            onChange={getName}
+            required
+          />
+          <input
+            className="form-control signupBtns"
+            type="text"
+            placeholder="Username"
+            onChange={getUserName}
+            required
+          />
+          <input
+            className="form-control signupBtns"
+            type="text"
+            placeholder="Email"
+            onChange={getEmail}
+            required
+          />
+          <input
+            className="form-control signupBtns"
+            type="password"
+            placeholder="Password"
+            onChange={getPassword}
+            required
+          />
+          <input
+            className="form-control signupBtns"
+            type="date"
+            onChange={getBirthDate}
+            required
+          />
+          <button
+            className="btn btn-primary mt-2 rounded-pill active"
+            onClick={registerUser}
+          >
+            Signup
+          </button>
+          <p>{message}</p>
+        </div>
       </div>
     </div>
   );

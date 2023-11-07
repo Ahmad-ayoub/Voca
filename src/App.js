@@ -9,11 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<AuthPage />} index>
-          <div className="App">
-            <AuthPage />
-          </div>
-        </Route>
+        <Route path="/" element={<AuthPage />} index />
         <Route path="/MainPage" element={<MainPage />} />
       </Routes>
     </Router>
