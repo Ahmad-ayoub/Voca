@@ -19,6 +19,7 @@ const AuthPage = () => {
   const getUserName = (e) => {
     console.log("Username has been added", e.target.value);
     setUserName(e.target.value);
+    console.log(setUserName);
   };
 
   const getEmail = (e) => {
@@ -42,9 +43,8 @@ const AuthPage = () => {
       .post("/login", { username, password })
       .then((response) => {
         console.log(response.data.message);
-        getUserName(response.data.message);
         setMessage("You logged in!");
-        navigate("/MainPage"); // This will navigate to the MainPage upon successful login
+        navigate("/MainPage");
       })
       .catch((error) => {
         console.log(error);
