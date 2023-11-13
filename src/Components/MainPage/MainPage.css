@@ -1,0 +1,26 @@
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.profile_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  outline: 1px solid black;
+  width: 15%;
+}
+
+.profile_box_image {
+  width: 20px;
+  height: auto;
+}
+
+.profile_box_text {
+  position: relative;
+  top: 8px;
+}
