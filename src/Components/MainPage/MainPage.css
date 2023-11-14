@@ -7,12 +7,25 @@
   }
 }
 
+.profile_and_group_box {
+  display: flex;
+  outline: 1px solid black;
+  align-items: center;
+}
+
 .profile_box {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  width: 25%;
+}
+
+.group_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   outline: 1px solid black;
-  width: 15%;
+  width: 75%;
 }
 
 .profile_box_image {
