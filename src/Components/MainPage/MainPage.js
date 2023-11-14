@@ -1,6 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMagnifyingGlass,
+  faUser,
+  faUserGroup,
+} from "@fortawesome/free-solid-svg-icons";
 
 const MainPage = () => {
   return (
@@ -15,6 +19,31 @@ const MainPage = () => {
         <>
           <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
           <p className="profile_box_text">Group #1</p>
+        </>
+      </div>
+      <div className="group_chat_list">
+        <>
+          <FontAwesomeIcon
+            icon={faMagnifyingGlass}
+            className="profile_box_image"
+          />
+          <input type="text" placeholder="Search" aria-label="Search" />
+        </>
+        <>
+          <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
+          <p className="profile_box_text">Group #1</p>
+        </>
+        <>
+          <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
+          <p className="profile_box_text">Group #2</p>
+        </>
+        <>
+          <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
+          <p className="profile_box_text">Group #3</p>
+        </>
+        <>
+          <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
+          <p className="profile_box_text">AI Alex</p>
         </>
       </div>
     </div>

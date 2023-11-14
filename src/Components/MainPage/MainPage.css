@@ -9,14 +9,14 @@
 
 .profile_and_group_box {
   display: flex;
-  outline: 1px solid black;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .profile_box {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  outline: 1px solid black;
   width: 25%;
 }
 
@@ -26,6 +26,14 @@
   justify-content: space-evenly;
   outline: 1px solid black;
   width: 75%;
+}
+
+.group_chat_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  outline: 1px solid black;
+  width: 25%;
 }
 
 .profile_box_image {
