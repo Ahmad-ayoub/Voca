@@ -15,25 +15,34 @@
 .profile_box {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   outline: 1px solid black;
-  width: 25%;
+  width: 35%;
 }
 
 .group_box {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   outline: 1px solid black;
-  width: 75%;
+  width: 65%;
+  height: 50%;
 }
 
 .group_chat_list {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   outline: 1px solid black;
-  width: 25%;
+  width: 35%;
+  flex-wrap: wrap;
+}
+
+.chat_list_box {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  outline: 1px solid black;
 }
 
 .profile_box_image {
