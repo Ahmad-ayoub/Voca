@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: flex-start;
   outline: 1px solid black;
-  width: 65%;
+  width: 75%;
   height: 50%;
 }
 
@@ -34,20 +34,49 @@
   align-items: center;
   justify-content: flex-start;
   outline: 1px solid black;
-  width: 35%;
+  width: 25%;
   flex-wrap: wrap;
 }
 
-.chat_list_box {
+.search-container {
+  position: relative;
   display: flex;
+  align-items: center;
+  margin-left: 25%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  pointer-events: none;
+  width: 20px;
+  height: auto; /* Makes the icon non-interactive */
+}
+
+.search-container input[type="text"] {
+  padding-left: 30px; /* Adjust padding to make room for the icon */
+  width: 100%;
+}
+
+.chat_list_box {
   justify-content: flex-start;
   width: 100%;
+  display: flex;
   outline: 1px solid black;
+}
+
+.input-box {
+  border-radius: 50px;
+  outline: 3px solid black;
 }
 
 .profile_box_image {
   width: 20px;
   height: auto;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .profile_box_text {

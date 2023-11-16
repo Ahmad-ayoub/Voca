@@ -14,13 +14,16 @@ const MainPage = () => {
           <FontAwesomeIcon icon={faUser} className="profile_box_image" />
           <p className="profile_box_text">User Name</p>
         </div>
-        <div className="chat_list_box">
-          <FontAwesomeIcon
-            icon={faMagnifyingGlass}
-            className="profile_box_image"
+        <div className="search-container">
+          <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon" />
+          <input
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+            className="input-box"
           />
-          <input type="text" placeholder="Search" aria-label="Search" />
         </div>
+
         <div className="chat_list_box">
           <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
           <p className="profile_box_text">Group #1</p>
