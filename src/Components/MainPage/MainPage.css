@@ -36,13 +36,15 @@
   outline: 1px solid black;
   width: 25%;
   flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  background-color: lightskyblue;
 }
 
 .search-container {
   position: relative;
   display: flex;
   align-items: center;
-  margin-left: 25%;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -82,4 +84,7 @@
 .profile_box_text {
   position: relative;
   top: 8px;
+}
+
+.text_box {
 }

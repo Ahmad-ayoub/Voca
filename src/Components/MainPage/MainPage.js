@@ -45,6 +45,7 @@ const MainPage = () => {
         <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
         <p className="profile_box_text">Group #1</p>
       </div>
+      <input className="text_box" placeholder="type here..." />
     </div>
   );
 };
