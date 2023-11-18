@@ -41,11 +41,15 @@ const MainPage = () => {
           <p className="profile_box_text">AI Alex</p>
         </div>
       </div>
-      <div className="group_box">
-        <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
-        <p className="profile_box_text">Group #1</p>
+      <div className="input_chat_box">
+        <div className="group_box">
+          <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
+          <p className="profile_box_text">Group #1</p>
+        </div>
+        <div className="text_box">
+          <input placeholder="type here..." />
+        </div>
       </div>
-      <input className="text_box" placeholder="type here..." />
     </div>
   );
 };

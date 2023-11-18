@@ -8,17 +8,10 @@
 }
 
 .profile_and_group_box {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25% 75%;
   flex-wrap: wrap;
 }
-
-/* .profile_box {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  outline: 1px solid black;
-  width: 35%;
-} */
 
 .group_box {
   display: flex;
@@ -86,5 +79,7 @@
   top: 8px;
 }
 
-/* .text_box {
-} */
+.text_box {
+  z-index: 1;
+  position: relative;
+}
