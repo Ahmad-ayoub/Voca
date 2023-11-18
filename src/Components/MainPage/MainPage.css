@@ -84,3 +84,11 @@
   display: flex;
   flex-direction: column;
 }
+
+.chat_box {
+  height: 92%;
+}
+
+.input_msg_box {
+  width: 95%;
+}
