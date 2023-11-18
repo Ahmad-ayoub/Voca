@@ -10,7 +10,6 @@
 .profile_and_group_box {
   display: grid;
   grid-template-columns: 25% 75%;
-  flex-wrap: wrap;
 }
 
 .group_box {
@@ -18,8 +17,7 @@
   align-items: center;
   justify-content: flex-start;
   outline: 1px solid black;
-  width: 75%;
-  height: 50%;
+  height: 5%;
 }
 
 .group_chat_list {
@@ -27,7 +25,6 @@
   align-items: center;
   justify-content: flex-start;
   outline: 1px solid black;
-  width: 25%;
   flex-wrap: wrap;
   flex-direction: column;
   height: 100vh;
@@ -80,6 +77,10 @@
 }
 
 .text_box {
-  z-index: 1;
   position: relative;
+}
+
+.input_chat_box {
+  display: flex;
+  flex-direction: column;
 }
