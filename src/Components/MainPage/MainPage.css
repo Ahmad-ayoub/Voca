@@ -12,13 +12,13 @@
   flex-wrap: wrap;
 }
 
-.profile_box {
+/* .profile_box {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   outline: 1px solid black;
   width: 35%;
-}
+} */
 
 .group_box {
   display: flex;
