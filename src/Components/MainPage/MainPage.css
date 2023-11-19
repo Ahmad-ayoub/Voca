@@ -89,6 +89,14 @@
   height: 92%;
 }
 
-.input_msg_box {
+.input_message_box {
   width: 95%;
+  border-radius: 50px;
+}
+
+.input_message_button {
+  width: 5%;
+  height: 100%;
+  color: blue;
+  border-radius: 50px;
 }

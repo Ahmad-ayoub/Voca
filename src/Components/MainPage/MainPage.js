@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faArrowAltCircleRight,
   faMagnifyingGlass,
   faUser,
   faUserGroup,
@@ -48,7 +49,10 @@ const MainPage = () => {
         </div>
         <div className="chat_box"></div>
         <div className="text_box">
-          <input className="input_msg_box" placeholder="Type here..." />
+          <input className="input_message_box" placeholder="Type here..." />
+          <button className="input_message_button">
+            <FontAwesomeIcon icon={faArrowAltCircleRight} />
+          </button>
         </div>
       </div>
     </div>
