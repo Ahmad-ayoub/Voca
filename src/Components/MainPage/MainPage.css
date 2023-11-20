@@ -92,6 +92,8 @@
 .input_message_box {
   width: 95%;
   border-radius: 50px;
+  width: calc(100% - 50px - 10px);
+  margin-left: 5px;
 }
 
 .input_message_button {
@@ -99,4 +101,6 @@
   height: 100%;
   color: blue;
   border-radius: 50px;
+  width: 50px;
+  margin-left: 2px;
 }
