@@ -59,6 +59,14 @@
   outline: 1px solid black;
 }
 
+.username_box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 81% 60%;
+  outline: 1px solid black;
+  align-items: center;
+}
+
 .input-box {
   border-radius: 50px;
   outline: 3px solid black;

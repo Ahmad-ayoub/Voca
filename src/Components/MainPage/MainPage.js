@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowAltCircleRight,
+  faEllipsisV,
   faMagnifyingGlass,
   faUser,
   faUserGroup,
@@ -11,9 +12,10 @@ const MainPage = () => {
   return (
     <div className="profile_and_group_box">
       <div className="group_chat_list">
-        <div className="chat_list_box">
+        <div className="username_box">
           <FontAwesomeIcon icon={faUser} className="profile_box_image" />
           <p className="profile_box_text">User Name</p>
+          <FontAwesomeIcon icon={faEllipsisV} />
         </div>
         <div className="search-container">
           <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon" />
