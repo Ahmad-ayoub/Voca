@@ -13,7 +13,10 @@ const MainPage = () => {
     <div className="profile_and_group_box">
       <div className="group_chat_list">
         <div className="username_box">
-          <FontAwesomeIcon icon={faUser} className="profile_box_image" />
+          <FontAwesomeIcon
+            icon={faUser}
+            className="profile_box_image_mainUser"
+          />
           <p className="profile_box_text">User Name</p>
           <button className="settings_button">
             <FontAwesomeIcon icon={faEllipsisV} />
