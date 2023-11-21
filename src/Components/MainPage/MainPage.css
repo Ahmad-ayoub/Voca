@@ -62,14 +62,14 @@
 .username_box {
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 15% 65% 20%;
   outline: 1px solid black;
   align-items: center;
 }
 
 .settings_button {
   width: 25%;
-  margin-right: 29%;
+  margin-left: 40%;
 }
 
 .input-box {
