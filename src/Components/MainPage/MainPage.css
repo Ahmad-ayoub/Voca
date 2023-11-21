@@ -62,9 +62,13 @@
 .username_box {
   width: 100%;
   display: grid;
-  grid-template-columns: 15% 81% 60%;
+  grid-template-columns: 15% 60% 25%;
   outline: 1px solid black;
   align-items: center;
+}
+
+.settings_button {
+  width: 25%;
 }
 
 .input-box {

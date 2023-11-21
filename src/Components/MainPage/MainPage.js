@@ -15,7 +15,9 @@ const MainPage = () => {
         <div className="username_box">
           <FontAwesomeIcon icon={faUser} className="profile_box_image" />
           <p className="profile_box_text">User Name</p>
-          <FontAwesomeIcon icon={faEllipsisV} />
+          <button className="settings_button">
+            <FontAwesomeIcon icon={faEllipsisV} />
+          </button>
         </div>
         <div className="search-container">
           <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon" />
