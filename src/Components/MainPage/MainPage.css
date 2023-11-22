@@ -117,14 +117,10 @@
 }
 
 .input_message_box {
-  width: 95%;
   border-radius: 50px;
   width: calc(100% - 50px - 10px);
   margin-left: 5px;
-}
-
-.input[type="text"]::placeholder {
-  margin-left: 50px;
+  padding: 10px;
 }
 
 .input_message_button {
