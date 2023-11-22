@@ -76,6 +76,7 @@
   margin: 0;
   cursor: pointer;
   outline: none;
+  justify-self: center;
 }
 
 .input-box {

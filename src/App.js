@@ -1,10 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Components/Authpage/AuthPage.css";
+import "./Components/AuthPage/AuthPage.css";
 import "./Components/MainPage/MainPage.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainPage from "./Components/MainPage/MainPage";
-import AuthPage from "./Components/Authpage/AuthPage";
+import AuthPage from "./Components/AuthPage/AuthPage";
+import settingsPage from "./Components/SettingsPage/settingsPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AuthPage />} index />
         <Route path="/MainPage" element={<MainPage />} />
+        <Route path="/settingsPage" element={<settingsPage />} />
       </Routes>
     </Router>
   );
