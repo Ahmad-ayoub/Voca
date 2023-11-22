@@ -5,7 +5,7 @@ import "./Components/MainPage/MainPage.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainPage from "./Components/MainPage/MainPage";
 import AuthPage from "./Components/AuthPage/AuthPage";
-import settingsPage from "./Components/SettingsPage/settingsPage";
+import SettingsPage from "./Components/SettingsPage/SettingsPage";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AuthPage />} index />
         <Route path="/MainPage" element={<MainPage />} />
-        <Route path="/settingsPage" element={<settingsPage />} />
+        <Route path="/SettingsPage" element={<SettingsPage />} />
       </Routes>
     </Router>
   );

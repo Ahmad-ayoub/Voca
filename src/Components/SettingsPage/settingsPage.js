@@ -1,6 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const settingsPage = () => {};
+const SettingsPage = () => {
+  return <div></div>;
+};
 
-export default settingsPage;
+export default SettingsPage;
