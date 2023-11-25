@@ -1,7 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const SettingsPage = () => {
+const settingsPage = () => {
   return (
     <div>
       <p>Hello World</p>
@@ -9,4 +8,4 @@ const SettingsPage = () => {
   );
 };
 
-export default SettingsPage;
+export default settingsPage;
