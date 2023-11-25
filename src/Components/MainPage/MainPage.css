@@ -132,3 +132,13 @@
   width: 50px;
   margin-left: 2px;
 }
+
+.logout_button {
+  border-radius: 50px;
+  margin-left: 3%;
+  background: darkorange;
+}
+
+.logout_text {
+  margin-bottom: 0;
+}
