@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router-dom";
 import {
   faArrowAltCircleRight,
   faEllipsisV,
@@ -9,6 +10,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const MainPage = () => {
+  let navigate = useNavigate();
+
+  function goToSettings() {
+    navigate("/SettingsPage");
+  }
+
   return (
     <div className="profile_and_group_box">
       <div className="group_chat_list">
@@ -18,7 +25,7 @@ const MainPage = () => {
             className="profile_box_image_mainUser"
           />
           <p className="profile_box_text">User Name</p>
-          <button className="settings_button">
+          <button className="settings_button" onClick={goToSettings}>
             <FontAwesomeIcon icon={faEllipsisV} />
           </button>
         </div>
