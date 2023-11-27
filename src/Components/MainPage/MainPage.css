@@ -135,8 +135,14 @@
 
 .logout_button {
   border-radius: 50px;
-  margin-left: 3%;
+  margin-left: 5%;
+  margin-bottom: 5%;
   background: darkorange;
+}
+
+.logout_button_box {
+  margin-top: auto;
+  outline: none;
 }
 
 .logout_text {

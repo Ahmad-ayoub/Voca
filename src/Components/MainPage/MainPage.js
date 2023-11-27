@@ -55,9 +55,9 @@ const MainPage = () => {
           <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
           <p className="profile_box_text">AI Alex</p>
         </div>
-        <div className="chat_list_box">
-          <button>
-            <p>Log Out</p>
+        <div className="chat_list_box logout_button_box ">
+          <button className="logout_button">
+            <p className="logout_text">Log Out</p>
           </button>
         </div>
       </div>
