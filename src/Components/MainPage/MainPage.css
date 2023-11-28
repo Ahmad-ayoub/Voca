@@ -140,6 +140,8 @@
 .input_chat_box {
   display: flex;
   flex-direction: column;
+  background-color: lightblue;
+  outline: 1px solid black;
 }
 
 .chat_box {
