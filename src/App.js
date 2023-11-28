@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Components/AuthPage/AuthPage.css";
 import "./Components/MainPage/MainPage.css";
+import "./Components/SettingsPage/SettingsPage.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainPage from "./Components/MainPage/MainPage";
 import AuthPage from "./Components/AuthPage/AuthPage";

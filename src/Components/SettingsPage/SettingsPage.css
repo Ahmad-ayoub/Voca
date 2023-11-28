@@ -1,0 +1,5 @@
+.settingsPage_layout {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 100vh;
+}

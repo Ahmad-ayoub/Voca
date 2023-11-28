@@ -4,7 +4,7 @@ import { faArrowLeft, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const SettingsPage = () => {
   return (
-    <div>
+    <div className="settingsPage_layout">
       <nav>
         <div>
           <FontAwesomeIcon icon={faArrowLeft} />
