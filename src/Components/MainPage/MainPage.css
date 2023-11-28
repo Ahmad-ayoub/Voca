@@ -44,11 +44,11 @@
   left: 10px;
   pointer-events: none;
   width: 20px;
-  height: auto; /* Makes the icon non-interactive */
+  height: auto;
 }
 
 .search-container input[type="text"] {
-  padding-left: 30px; /* Adjust padding to make room for the icon */
+  padding-left: 30px;
   width: 100%;
 }
 
@@ -57,6 +57,30 @@
   width: 100%;
   display: flex;
   outline: 1px solid black;
+}
+
+.chat_list_buttons {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  display: flex;
+  transition: background-color 0.3s ease;
+}
+
+.chat_list_buttons:hover {
+  background-color: #6495ed;
+}
+
+.chat_list_icons {
+  width: 20px;
+  height: auto;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 3%;
 }
 
 .username_box {
@@ -77,6 +101,11 @@
   cursor: pointer;
   outline: none;
   justify-self: center;
+  transition: transform 0.3s ease;
+}
+
+.settings_button:hover {
+  transform: scale(1.4);
 }
 
 .input-box {
@@ -138,6 +167,11 @@
   margin-left: 5%;
   margin-bottom: 5%;
   background: darkorange;
+  transition: transform 0.3s ease;
+}
+
+.logout_button:hover {
+  transform: scale(1.1);
 }
 
 .logout_button_box {

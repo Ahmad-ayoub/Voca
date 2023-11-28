@@ -44,20 +44,28 @@ const MainPage = () => {
         </div>
 
         <div className="chat_list_box">
-          <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
-          <p className="profile_box_text">Group #1</p>
+          <button className="chat_list_buttons">
+            <FontAwesomeIcon icon={faUserGroup} className="chat_list_icons" />
+            <p className="profile_box_text">Group #1</p>
+          </button>
         </div>
         <div className="chat_list_box">
-          <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
-          <p className="profile_box_text">Group #2</p>
+          <button className="chat_list_buttons">
+            <FontAwesomeIcon icon={faUserGroup} className="chat_list_icons" />
+            <p className="profile_box_text">Group #2</p>
+          </button>
         </div>
         <div className="chat_list_box">
-          <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
-          <p className="profile_box_text">Group #3</p>
+          <button className="chat_list_buttons">
+            <FontAwesomeIcon icon={faUserGroup} className="chat_list_icons" />
+            <p className="profile_box_text">Group #3</p>
+          </button>
         </div>
         <div className="chat_list_box">
-          <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
-          <p className="profile_box_text">AI Alex</p>
+          <button className="chat_list_buttons">
+            <FontAwesomeIcon icon={faUserGroup} className="chat_list_icons" />
+            <p className="profile_box_text">AI Alex</p>
+          </button>
         </div>
         <div className="chat_list_box logout_button_box ">
           <button className="logout_button" onClick={goToAuthPage}>
