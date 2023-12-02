@@ -12,3 +12,9 @@
   flex-wrap: wrap;
   gap: 5px;
 }
+
+.button_layout {
+  margin-left: 10px;
+  grid-row-gap: 15px;
+  display: grid;
+}
