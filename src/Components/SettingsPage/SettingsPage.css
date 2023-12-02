@@ -18,3 +18,19 @@
   grid-row-gap: 15px;
   display: grid;
 }
+
+.button_shape {
+  width: 25%;
+  padding: 0;
+  margin: 0;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.button_shape:hover {
+  transform: scale(1.1);
+}
+
+.btntext_format {
+  margin: inherit;
+}

@@ -13,18 +13,18 @@ const SettingsPage = () => {
         </div>
         <div className="button_layout">
           <div>
-            <button>
-              <p>Theme</p>
+            <button className="button_shape">
+              <p className="btntext_format">Theme</p>
             </button>
           </div>
           <div>
-            <button>
-              <p>Font</p>
+            <button className="button_shape">
+              <p className="btntext_format">Font</p>
             </button>
           </div>
           <div>
-            <button>
-              <>Logout</>
+            <button className="button_shape">
+              <p className="btntext_format">Logout</p>
             </button>
           </div>
         </div>
