@@ -7,9 +7,9 @@ const SettingsPage = () => {
     <div className="settingsPage_layout">
       <nav>
         <div className="backbutton_usernamebox">
-          <FontAwesomeIcon icon={faArrowLeft} />
-          <FontAwesomeIcon icon={faUser} />
-          <>Username</>
+          <FontAwesomeIcon icon={faArrowLeft} size="2x" />
+          <FontAwesomeIcon icon={faUser} size="2x" />
+          <p className="font_style">Username</p>
         </div>
         <div className="button_layout">
           <div>
@@ -17,7 +17,7 @@ const SettingsPage = () => {
               <p className="btntext_format">Theme</p>
             </button>
           </div>
-          <div>
+          <div className="button_layout_two">
             <button className="button_shape">
               <p className="btntext_format">Font</p>
             </button>
