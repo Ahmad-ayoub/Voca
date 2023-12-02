@@ -11,12 +11,16 @@ const SettingsPage = () => {
           <FontAwesomeIcon icon={faUser} />
           <p>Username</p>
         </div>
-        <button>
-          <p>Theme</p>
-        </button>
-        <button>
-          <p>Font</p>
-        </button>
+        <div>
+          <button>
+            <p>Theme</p>
+          </button>
+        </div>
+        <div>
+          <button>
+            <p>Font</p>
+          </button>
+        </div>
         <div>
           <button>
             <p>Logout</p>
