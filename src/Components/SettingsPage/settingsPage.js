@@ -6,25 +6,27 @@ const SettingsPage = () => {
   return (
     <div className="settingsPage_layout">
       <nav>
-        <div>
+        <div className="backbutton_usernamebox">
           <FontAwesomeIcon icon={faArrowLeft} />
           <FontAwesomeIcon icon={faUser} />
-          <p>Username</p>
+          <>Username</>
         </div>
         <div>
-          <button>
-            <p>Theme</p>
-          </button>
-        </div>
-        <div>
-          <button>
-            <p>Font</p>
-          </button>
-        </div>
-        <div>
-          <button>
-            <p>Logout</p>
-          </button>
+          <div>
+            <button>
+              <p>Theme</p>
+            </button>
+          </div>
+          <div>
+            <button>
+              <p>Font</p>
+            </button>
+          </div>
+          <div>
+            <button>
+              <>Logout</>
+            </button>
+          </div>
         </div>
       </nav>
       <div>

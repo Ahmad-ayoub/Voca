@@ -3,3 +3,12 @@
   grid-template-columns: 25% 75%;
   height: 100vh;
 }
+
+.backbutton_usernamebox {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+}
