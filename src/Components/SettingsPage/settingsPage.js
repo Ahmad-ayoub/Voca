@@ -12,7 +12,7 @@ const SettingsPage = () => {
           <p className="font_style">Username</p>
         </div>
         <div className="button_layout">
-          <div>
+          <div className="button_layout_one">
             <button className="button_shape">
               <p className="btntext_format">Theme</p>
             </button>
@@ -22,7 +22,7 @@ const SettingsPage = () => {
               <p className="btntext_format">Font</p>
             </button>
           </div>
-          <div>
+          <div className="button_layout_three">
             <button className="button_shape">
               <p className="btntext_format">Logout</p>
             </button>

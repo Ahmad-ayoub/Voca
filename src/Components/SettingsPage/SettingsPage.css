@@ -17,6 +17,20 @@
   outline: 1px solid black;
   grid-row-gap: 15px;
   display: grid;
+  transition: background-color 0.3s ease;
+}
+
+.button_layout_one {
+  transition: background-color 0.3s ease;
+}
+
+.button_layout_two {
+  outline: 1px solid black;
+  transition: background-color 0.3s ease;
+}
+
+.button_layout_three {
+  transition: background-color 0.3s ease;
 }
 
 .button_shape {
@@ -28,19 +42,22 @@
   outline: none;
   width: 100%;
   display: flex;
-  transition: background-color 0.3s ease;
   margin-left: 10px;
 }
 
-.button_shape:hover {
+.button_layout_one:hover {
+  background-color: #6495ed;
+}
+
+.button_layout_two:hover {
+  background-color: #6495ed;
+}
+
+.button_layout_three:hover {
   background-color: #6495ed;
 }
 
 .font_style {
   margin: inherit;
   font-size: 25px;
-}
-
-.button_layout_two {
-  outline: 1px solid black;
 }
