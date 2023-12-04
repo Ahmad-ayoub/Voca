@@ -15,7 +15,6 @@
 
 .button_layout {
   outline: 1px solid black;
-  grid-row-gap: 15px;
   display: grid;
   transition: background-color 0.3s ease;
 }

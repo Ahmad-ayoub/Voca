@@ -5,7 +5,7 @@ import { faArrowLeft, faUser } from "@fortawesome/free-solid-svg-icons";
 const SettingsPage = () => {
   return (
     <div className="settingsPage_layout">
-      <nav>
+      <main>
         <div className="backbutton_usernamebox">
           <FontAwesomeIcon icon={faArrowLeft} size="2x" />
           <FontAwesomeIcon icon={faUser} size="2x" />
@@ -28,14 +28,14 @@ const SettingsPage = () => {
             </button>
           </div>
         </div>
-      </nav>
-      <div>
+      </main>
+      <section>
         <FontAwesomeIcon icon={faUser} />
         <h2>Name</h2>
         <h2>email</h2>
         <h2>username</h2>
         <button>Edit</button>
-      </div>
+      </section>
     </div>
   );
 };
