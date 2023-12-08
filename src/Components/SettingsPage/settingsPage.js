@@ -30,12 +30,12 @@ const SettingsPage = () => {
         </div>
       </main>
       <section>
-        <section>
-          <FontAwesomeIcon icon={faUser} />
+        <section className="user_credentials">
+          <FontAwesomeIcon icon={faUser} size="2x" />
           <h2>Name</h2>
           <h2>email</h2>
           <h2>username</h2>
-          <button>Edit</button>
+          <button className="button_edit">Edit</button>
         </section>
       </section>
     </div>
