@@ -1,6 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeft,
+  faFont,
+  faPalette,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 
 const SettingsPage = () => {
   return (
@@ -14,11 +19,13 @@ const SettingsPage = () => {
         <div className="button_layout">
           <div className="button_layout_one">
             <button className="button_shape">
+              <FontAwesomeIcon icon={faPalette} size="2x" />
               <p className="btntext_format">Theme</p>
             </button>
           </div>
           <div className="button_layout_two">
             <button className="button_shape">
+              <FontAwesomeIcon icon={faFont} size="2x" />
               <p className="btntext_format">Font</p>
             </button>
           </div>
