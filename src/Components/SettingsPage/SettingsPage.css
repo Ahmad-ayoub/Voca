@@ -79,3 +79,7 @@
 .btntext_format {
   transform: translate(10px, 6px);
 }
+
+.fonticon_format {
+  margin-right: 3.5px;
+}

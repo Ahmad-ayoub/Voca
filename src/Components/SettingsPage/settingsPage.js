@@ -25,15 +25,19 @@ const SettingsPage = () => {
           </div>
           <div className="button_layout_two">
             <button className="button_shape">
-              <FontAwesomeIcon icon={faFont} size="2x" />
+              <FontAwesomeIcon
+                icon={faFont}
+                size="2x"
+                className="fonticon_format"
+              />
               <p className="btntext_format">Font</p>
             </button>
           </div>
-          <div className="button_layout_three">
-            <button className="button_shape">
-              <p className="btntext_format">Logout</p>
-            </button>
-          </div>
+        </div>
+        <div className="chat_list_box logout_button_box ">
+          <button className="logout_button">
+            <p className="logout_text">Log Out</p>
+          </button>
         </div>
       </main>
       <section>
