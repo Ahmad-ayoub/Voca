@@ -33,11 +33,11 @@ const SettingsPage = () => {
               <p className="btntext_format">Font</p>
             </button>
           </div>
-        </div>
-        <div className="chat_list_box logout_button_box ">
-          <button className="logout_button">
-            <p className="logout_text">Log Out</p>
-          </button>
+          <div className="chat_list_box logout_button_box ">
+            <button className="logout_button">
+              <p className="logout_text">Log Out</p>
+            </button>
+          </div>
         </div>
       </main>
       <section>

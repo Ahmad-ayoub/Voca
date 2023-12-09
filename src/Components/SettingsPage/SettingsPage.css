@@ -14,12 +14,12 @@
 }
 
 .button_layout {
-  outline: 1px solid black;
   display: grid;
   transition: background-color 0.3s ease;
 }
 
 .button_layout_one {
+  outline: 1px solid black;
   transition: background-color 0.3s ease;
 }
 
