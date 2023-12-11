@@ -83,3 +83,15 @@
 .fonticon_format {
   margin-right: 3.5px;
 }
+
+.chat_list_box {
+  justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  outline: 1px solid black;
+}
+
+.logout_button_box {
+  margin-top: auto;
+  outline: none;
+}
