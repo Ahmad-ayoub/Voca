@@ -15,7 +15,9 @@
 
 .button_layout {
   display: grid;
+  grid-template-rows: auto auto 1fr; /* Allocate space for three rows */
   transition: background-color 0.3s ease;
+  height: 90%; /* Ensure the container takes full height */
 }
 
 .button_layout_one {
@@ -94,4 +96,29 @@
 .logout_button_box {
   margin-top: auto;
   outline: none;
+}
+
+.logout_button {
+  border-radius: 50px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  background: darkorange;
+  transition: transform 0.3s ease;
+}
+
+.logout_button:hover {
+  cursor: pointer;
+}
+
+.logout_text {
+  margin-bottom: 0;
+}
+
+.backbutton {
+  transition: transform 0.3s ease;
+}
+
+.backbutton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

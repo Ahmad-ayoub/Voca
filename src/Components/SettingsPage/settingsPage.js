@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router-dom";
 import {
   faArrowLeft,
   faFont,
@@ -8,11 +9,26 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const SettingsPage = () => {
+  let navigate = useNavigate();
+
+  function goToMain() {
+    navigate("/MainPage");
+  }
+
+  function goToAuthPage() {
+    navigate("/");
+  }
+
   return (
     <div className="settingsPage_layout">
       <main>
         <div className="backbutton_usernamebox">
-          <FontAwesomeIcon icon={faArrowLeft} size="2x" />
+          <FontAwesomeIcon
+            icon={faArrowLeft}
+            size="2x"
+            onClick={goToMain}
+            className="backbutton"
+          />
           <FontAwesomeIcon icon={faUser} size="2x" />
           <p className="font_style">Username</p>
         </div>
@@ -34,7 +50,7 @@ const SettingsPage = () => {
             </button>
           </div>
           <div className="chat_list_box logout_button_box ">
-            <button className="logout_button">
+            <button className="logout_button" onClick={goToAuthPage}>
               <p className="logout_text">Log Out</p>
             </button>
           </div>
