@@ -21,7 +21,7 @@ const SettingsPage = () => {
 
   return (
     <div className="settingsPage_layout">
-      <main>
+      <main className="mainColor">
         <div className="backbutton_usernamebox">
           <FontAwesomeIcon
             icon={faArrowLeft}
@@ -56,7 +56,7 @@ const SettingsPage = () => {
           </div>
         </div>
       </main>
-      <section>
+      <section className="sectionColor">
         <section className="user_credentials">
           <FontAwesomeIcon icon={faUser} size="2x" />
           <h2>Name</h2>
