@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import {
@@ -19,6 +19,8 @@ const SettingsPage = () => {
     navigate("/");
   }
 
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="settingsPage_layout">
       <main className="mainColor">
@@ -33,7 +35,11 @@ const SettingsPage = () => {
           <p className="font_style">Username</p>
         </div>
         <div className="button_layout">
-          <div className="button_layout_one">
+          <div
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            className="button_layout_one"
+          >
             <button className="button_shape">
               <FontAwesomeIcon icon={faPalette} size="2x" />
               <p className="btntext_format">Theme</p>
@@ -57,6 +63,17 @@ const SettingsPage = () => {
         </div>
       </main>
       <section className="sectionColor">
+        <section>
+          {isHovered && (
+            <div
+              style={{
+                width: "200px",
+                height: "200px",
+                backgroundColor: "green",
+              }}
+            ></div>
+          )}
+        </section>
         <section className="user_credentials">
           <FontAwesomeIcon icon={faUser} size="2x" />
           <h2>Name</h2>
