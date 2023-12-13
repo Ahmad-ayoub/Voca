@@ -71,6 +71,7 @@
 
 .sectionColor {
   background-color: lightblue;
+  z-index: 1;
 }
 
 .user_credentials {
@@ -133,4 +134,13 @@
 .backbutton:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.themeSelection {
+  width: "10vh";
+  height: "10vh";
+  background-color: orange;
+  z-index: -1;
+  position: absolute;
+  transform: translate(0px, 9.5vh);
 }

@@ -65,13 +65,11 @@ const SettingsPage = () => {
       <section className="sectionColor">
         <section>
           {isHovered && (
-            <div
-              style={{
-                width: "200px",
-                height: "200px",
-                backgroundColor: "green",
-              }}
-            ></div>
+            <div className="themeSelection">
+              <p>Main Theme</p>
+              <p>Theme 2</p>
+              <p>Theme 3</p>
+            </div>
           )}
         </section>
         <section className="user_credentials">
