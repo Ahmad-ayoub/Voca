@@ -19,7 +19,17 @@ const SettingsPage = () => {
     navigate("/");
   }
 
-  const [isHovered, setIsHovered] = useState(false);
+  const [hoverCount, setHoverCount] = useState(0);
+
+  const onMouseEnter = () => {
+    setHoverCount((prevCount) => prevCount + 1);
+  };
+
+  const onMouseLeave = () => {
+    setHoverCount((prevCount) => Math.max(0, prevCount - 1));
+  };
+
+  const isHovered = hoverCount > 0;
 
   return (
     <div className="settingsPage_layout">
@@ -36,8 +46,8 @@ const SettingsPage = () => {
         </div>
         <div className="button_layout">
           <div
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
             className="button_layout_one"
           >
             <button className="button_shape">
@@ -65,10 +75,14 @@ const SettingsPage = () => {
       <section className="sectionColor">
         <section>
           {isHovered && (
-            <div className="themeSelection">
+            <div
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+              className="themeSelection"
+            >
               <p className="mainThemeLayout">Main Theme</p>
-              <p>Theme 2</p>
-              <p className="themethreelayout">Theme 3</p>
+              <p className="themetwolayout">Theme 2</p>
+              <p>Theme 3</p>
             </div>
           )}
         </section>
