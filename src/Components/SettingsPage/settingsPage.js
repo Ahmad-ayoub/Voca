@@ -66,9 +66,9 @@ const SettingsPage = () => {
         <section>
           {isHovered && (
             <div className="themeSelection">
-              <p>Main Theme</p>
+              <p className="mainThemeLayout">Main Theme</p>
               <p>Theme 2</p>
-              <p>Theme 3</p>
+              <p className="themethreelayout">Theme 3</p>
             </div>
           )}
         </section>

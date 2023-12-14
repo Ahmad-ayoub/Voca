@@ -139,8 +139,17 @@
 .themeSelection {
   width: "10vh";
   height: "10vh";
-  background-color: orange;
+  background-color: lightskyblue;
+  outline: 1px solid black;
   z-index: -1;
   position: absolute;
   transform: translate(0px, 9.5vh);
+}
+
+.mainThemeLayout {
+  border-bottom: 2px solid #000000;
+}
+
+.themethreelayout {
+  border-bottom: 2px solid #000000;
 }
