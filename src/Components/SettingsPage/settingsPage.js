@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import {
@@ -19,17 +19,24 @@ const SettingsPage = () => {
     navigate("/");
   }
 
-  const [hoverCount, setHoverCount] = useState(0);
+  const [isButtonHovered, setIsButtonHovered] = useState(false);
+  const [isListHovered, setIsListHovered] = useState(false);
+  const [delayedHide, setDelayedHide] = useState(false);
 
-  const onMouseEnter = () => {
-    setHoverCount((prevCount) => prevCount + 1);
-  };
+  // Combined state to determine if the theme list should be visible
+  const showThemeList = isButtonHovered || isListHovered || delayedHide;
 
-  const onMouseLeave = () => {
-    setHoverCount((prevCount) => Math.max(0, prevCount - 1));
-  };
+  useEffect(() => {
+    let timeout;
+    if (isButtonHovered) {
+      setDelayedHide(true);
+    } else {
+      // Set a delay before hiding the theme list
+      timeout = setTimeout(() => setDelayedHide(false), 300); // 300 milliseconds delay
+    }
 
-  const isHovered = hoverCount > 0;
+    return () => clearTimeout(timeout); // Clear timeout on cleanup
+  }, [isButtonHovered]);
 
   return (
     <div className="settingsPage_layout">
@@ -46,8 +53,8 @@ const SettingsPage = () => {
         </div>
         <div className="button_layout">
           <div
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
+            onMouseEnter={() => setIsButtonHovered(true)}
+            onMouseLeave={() => setIsButtonHovered(false)}
             className="button_layout_one"
           >
             <button className="button_shape">
@@ -74,10 +81,10 @@ const SettingsPage = () => {
       </main>
       <section className="sectionColor">
         <section>
-          {isHovered && (
+          {showThemeList && (
             <div
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
+              onMouseEnter={() => setIsListHovered(true)}
+              onMouseLeave={() => setIsListHovered(false)}
               className="themeSelection"
             >
               <p className="mainThemeLayout">Main Theme</p>
