@@ -19,24 +19,20 @@ const SettingsPage = () => {
     navigate("/");
   }
 
-  const [isButtonHovered, setIsButtonHovered] = useState(false);
-  const [isListHovered, setIsListHovered] = useState(false);
-  const [delayedHide, setDelayedHide] = useState(false);
-
-  // Combined state to determine if the theme list should be visible
-  const showThemeList = isButtonHovered || isListHovered || delayedHide;
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     let timeout;
-    if (isButtonHovered) {
-      setDelayedHide(true);
-    } else {
-      // Set a delay before hiding the theme list
-      timeout = setTimeout(() => setDelayedHide(false), 300); // 300 milliseconds delay
+    if (!isHovered) {
+      // Start a timeout when the mouse is not over either the button or the list
+      timeout = setTimeout(() => setIsHovered(false), 300);
     }
 
-    return () => clearTimeout(timeout); // Clear timeout on cleanup
-  }, [isButtonHovered]);
+    return () => {
+      // Clear the timeout if the mouse re-enters before the timeout completes
+      if (timeout) clearTimeout(timeout);
+    };
+  }, [isHovered]);
 
   return (
     <div className="settingsPage_layout">
@@ -53,8 +49,8 @@ const SettingsPage = () => {
         </div>
         <div className="button_layout">
           <div
-            onMouseEnter={() => setIsButtonHovered(true)}
-            onMouseLeave={() => setIsButtonHovered(false)}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
             className="button_layout_one"
           >
             <button className="button_shape">
@@ -80,19 +76,17 @@ const SettingsPage = () => {
         </div>
       </main>
       <section className="sectionColor">
-        <section>
-          {showThemeList && (
-            <div
-              onMouseEnter={() => setIsListHovered(true)}
-              onMouseLeave={() => setIsListHovered(false)}
-              className="themeSelection"
-            >
-              <p className="mainThemeLayout">Main Theme</p>
-              <p className="themetwolayout">Theme 2</p>
-              <p>Theme 3</p>
-            </div>
-          )}
-        </section>
+        {isHovered && (
+          <div
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            className="themeSelection"
+          >
+            <p className="mainThemeLayout">Main Theme</p>
+            <p className="themetwolayout">Theme 2</p>
+            <p>Theme 3</p>
+          </div>
+        )}
         <section className="user_credentials">
           <FontAwesomeIcon icon={faUser} size="2x" />
           <h2>Name</h2>
