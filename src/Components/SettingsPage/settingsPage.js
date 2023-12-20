@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import {
@@ -19,20 +19,8 @@ const SettingsPage = () => {
     navigate("/");
   }
 
-  const [isHovered, setIsHovered] = useState(false);
-
-  useEffect(() => {
-    let timeout;
-    if (!isHovered) {
-      // Start a timeout when the mouse is not over either the button or the list
-      timeout = setTimeout(() => setIsHovered(false), 300);
-    }
-
-    return () => {
-      // Clear the timeout if the mouse re-enters before the timeout completes
-      if (timeout) clearTimeout(timeout);
-    };
-  }, [isHovered]);
+  const [isThemeHovered, setIsThemeHovered] = useState(false);
+  const [isFontHovered, setIsFontHovered] = useState(false);
 
   return (
     <div className="settingsPage_layout">
@@ -49,8 +37,8 @@ const SettingsPage = () => {
         </div>
         <div className="button_layout">
           <div
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseEnter={() => setIsThemeHovered(true)}
+            onMouseLeave={() => setIsThemeHovered(false)}
             className="button_layout_one"
           >
             <button className="button_shape">
@@ -58,7 +46,11 @@ const SettingsPage = () => {
               <p className="btntext_format">Theme</p>
             </button>
           </div>
-          <div className="button_layout_two">
+          <div
+            onMouseEnter={() => setIsFontHovered(true)}
+            onMouseLeave={() => setIsFontHovered(false)}
+            className="button_layout_two"
+          >
             <button className="button_shape">
               <FontAwesomeIcon
                 icon={faFont}
@@ -76,15 +68,26 @@ const SettingsPage = () => {
         </div>
       </main>
       <section className="sectionColor">
-        {isHovered && (
+        {isThemeHovered && (
           <div
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseEnter={() => setIsThemeHovered(true)}
+            onMouseLeave={() => setIsThemeHovered(false)}
             className="themeSelection"
           >
             <p className="mainThemeLayout">Main Theme</p>
             <p className="themetwolayout">Theme 2</p>
             <p>Theme 3</p>
+          </div>
+        )}
+        {isFontHovered && (
+          <div
+            onMouseEnter={() => setIsFontHovered(true)}
+            onMouseLeave={() => setIsFontHovered(false)}
+            className="themeSelection"
+          >
+            <p className="mainThemeLayout">16px</p>
+            <p className="themetwolayout">20px</p>
+            <p>26px</p>
           </div>
         )}
         <section className="user_credentials">

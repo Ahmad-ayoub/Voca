@@ -141,9 +141,19 @@
   height: "10vh";
   background-color: lightskyblue;
   outline: 1px solid black;
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   transform: translate(0px, 9.5vh);
+}
+
+.fontSelection {
+  width: "15vh";
+  height: "15vh";
+  background-color: lightskyblue;
+  outline: 1px solid black;
+  z-index: 1;
+  position: absolute;
+  transform: translate(0px, 15vh);
 }
 
 .mainThemeLayout {
