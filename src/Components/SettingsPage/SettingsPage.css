@@ -138,7 +138,7 @@
 
 .themeSelection {
   width: "10vh";
-  height: "10vh";
+  height: "3vh";
   background-color: lightskyblue;
   outline: 1px solid black;
   z-index: 1;
@@ -156,10 +156,34 @@
   transform: translate(0px, 14.5vh);
 }
 
-.mainThemeLayout {
+.themeonelayout {
   border-bottom: 1px solid #000000;
+}
+
+.themeonelayout:hover {
+  background-color: #6495ed;
 }
 
 .themetwolayout {
   border-bottom: 1px solid #000000;
+}
+
+.themetwolayout:hover {
+  background-color: #6495ed;
+}
+
+.fontonelayout {
+  border-bottom: 1px solid #000000;
+}
+
+.fontonelayout:hover {
+  background-color: #6495ed;
+}
+
+.fonttwolayout {
+  border-bottom: 1px solid #000000;
+}
+
+.fonttwolayout:hover {
+  background-color: #6495ed;
 }

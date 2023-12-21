@@ -38,7 +38,7 @@ const SettingsPage = () => {
         <div className="button_layout">
           <div
             onMouseEnter={() => setIsThemeHovered(true)}
-            onMouseLeave={() => setIsThemeHovered(false)}
+            // onMouseLeave={() => setIsThemeHovered(false)}
             className="button_layout_one"
           >
             <button className="button_shape">
@@ -71,12 +71,12 @@ const SettingsPage = () => {
         {isThemeHovered && (
           <div
             onMouseEnter={() => setIsThemeHovered(true)}
-            onMouseLeave={() => setIsThemeHovered(false)}
+            // onMouseLeave={() => setIsThemeHovered(false)}
             className="themeSelection"
           >
-            <p className="mainThemeLayout">Main Theme</p>
+            <p className="themeonelayout">Main Theme</p>
             <p className="themetwolayout">Theme 2</p>
-            <p>Theme 3</p>
+            <p className="themethreelayout">Theme 3</p>
           </div>
         )}
         {isFontHovered && (
@@ -85,9 +85,9 @@ const SettingsPage = () => {
             onMouseLeave={() => setIsFontHovered(false)}
             className="fontSelection"
           >
-            <p className="mainThemeLayout">16px</p>
-            <p className="themetwolayout">20px</p>
-            <p>26px</p>
+            <p className="fontonelayout">16px</p>
+            <p className="fonttwolayout">20px</p>
+            <p className="fontthreelayout">26px</p>
           </div>
         )}
         <section className="user_credentials">
