@@ -83,7 +83,7 @@ const SettingsPage = () => {
           <div
             onMouseEnter={() => setIsFontHovered(true)}
             onMouseLeave={() => setIsFontHovered(false)}
-            className="themeSelection"
+            className="fontSelection"
           >
             <p className="mainThemeLayout">16px</p>
             <p className="themetwolayout">20px</p>

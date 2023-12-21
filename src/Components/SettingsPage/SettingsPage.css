@@ -153,7 +153,7 @@
   outline: 1px solid black;
   z-index: 1;
   position: absolute;
-  transform: translate(0px, 15vh);
+  transform: translate(0px, 14.5vh);
 }
 
 .mainThemeLayout {
