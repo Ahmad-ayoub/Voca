@@ -144,6 +144,8 @@
   z-index: 1;
   position: absolute;
   transform: translate(0px, 9.5vh);
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
 }
 
 .fontSelection {
@@ -154,10 +156,13 @@
   z-index: 1;
   position: absolute;
   transform: translate(0px, 14.5vh);
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
 }
 
 .themeonelayout {
   border-bottom: 1px solid #000000;
+  margin: 0;
 }
 
 .themeonelayout:hover {
@@ -166,6 +171,11 @@
 
 .themetwolayout {
   border-bottom: 1px solid #000000;
+  margin: 0;
+}
+
+.themethreelayout {
+  margin: 0;
 }
 
 .themetwolayout:hover {
@@ -174,6 +184,7 @@
 
 .fontonelayout {
   border-bottom: 1px solid #000000;
+  margin: 0;
 }
 
 .fontonelayout:hover {
@@ -182,8 +193,21 @@
 
 .fonttwolayout {
   border-bottom: 1px solid #000000;
+  margin: 0;
 }
 
 .fonttwolayout:hover {
+  background-color: #6495ed;
+}
+
+.themethreelayout:hover {
+  background-color: #6495ed;
+}
+
+.fontthreelayout {
+  margin: 0;
+}
+
+.fontthreelayout:hover {
   background-color: #6495ed;
 }

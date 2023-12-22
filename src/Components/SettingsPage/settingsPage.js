@@ -38,7 +38,7 @@ const SettingsPage = () => {
         <div className="button_layout">
           <div
             onMouseEnter={() => setIsThemeHovered(true)}
-            // onMouseLeave={() => setIsThemeHovered(false)}
+            onMouseLeave={() => setIsThemeHovered(false)}
             className="button_layout_one"
           >
             <button className="button_shape">
@@ -71,7 +71,7 @@ const SettingsPage = () => {
         {isThemeHovered && (
           <div
             onMouseEnter={() => setIsThemeHovered(true)}
-            // onMouseLeave={() => setIsThemeHovered(false)}
+            onMouseLeave={() => setIsThemeHovered(false)}
             className="themeSelection"
           >
             <p className="themeonelayout">Main Theme</p>
