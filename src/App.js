@@ -7,14 +7,17 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainPage from "./Components/MainPage/MainPage";
 import AuthPage from "./Components/AuthPage/AuthPage";
 import SettingsPage from "./Components/SettingsPage/SettingsPage";
+import { ThemeProvider } from "./Components/ThemeChange/UseTheme";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<AuthPage />} index />
-        <Route path="/MainPage" element={<MainPage />} />
-        <Route path="/SettingsPage" element={<SettingsPage />} />
+        <ThemeProvider>
+          <Route path="/" element={<AuthPage />} index />
+          <Route path="/MainPage" element={<MainPage />} />
+          <Route path="/SettingsPage" element={<SettingsPage />} />
+        </ThemeProvider>
       </Routes>
     </Router>
   );
