@@ -12,13 +12,13 @@ import { ThemeProvider } from "./Components/ThemeChange/UseTheme";
 function App() {
   return (
     <Router>
-      <Routes>
-        <ThemeProvider>
+      <ThemeProvider>
+        <Routes>
           <Route path="/" element={<AuthPage />} index />
           <Route path="/MainPage" element={<MainPage />} />
           <Route path="/SettingsPage" element={<SettingsPage />} />
-        </ThemeProvider>
-      </Routes>
+        </Routes>
+      </ThemeProvider>
     </Router>
   );
 }
