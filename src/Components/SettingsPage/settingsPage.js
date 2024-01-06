@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import {
@@ -8,6 +8,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { themeClasses } from "../ThemeChange/ThemeClasses";
+import { ThemeContext } from "../ThemeChange/UseTheme";
 import { useTheme } from "styled-components";
 
 const SettingsPage = () => {
@@ -23,6 +24,10 @@ const SettingsPage = () => {
 
   const [isThemeHovered, setIsThemeHovered] = useState(false);
   const [isFontHovered, setIsFontHovered] = useState(false);
+  const { theme } = useContext(ThemeContext);
+  const { changeTheme } = useTheme();
+  const currentThemeClasses =
+    themeClasses[theme] || themeClasses["defaultTheme"];
 
   return (
     <div className="settingsPage_layout">
@@ -76,9 +81,24 @@ const SettingsPage = () => {
             onMouseLeave={() => setIsThemeHovered(false)}
             className="themeSelection"
           >
-            <p className="themeonelayout">Main Theme</p>
-            <p className="themetwolayout">Theme 2</p>
-            <p className="themethreelayout">Theme 3</p>
+            <button
+              className="themeonelayout"
+              onClick={() => changeTheme("defaultTheme")}
+            >
+              Main Theme
+            </button>
+            <button
+              className="themetwolayout"
+              onClick={() => changeTheme("secondaryTheme")}
+            >
+              Theme 2
+            </button>
+            <button
+              className="themethreelayout"
+              onClick={() => changeTheme("thirdTheme")}
+            >
+              Theme 3
+            </button>
           </div>
         )}
         {isFontHovered && (
