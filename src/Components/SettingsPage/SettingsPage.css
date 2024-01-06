@@ -20,9 +20,9 @@
 
 .button_layout {
   display: grid;
-  grid-template-rows: auto auto 1fr; /* Allocate space for three rows */
+  grid-template-rows: auto auto 1fr;
   transition: background-color 0.3s ease;
-  height: 90%; /* Ensure the container takes full height */
+  height: 90%;
 }
 
 .button_layout_one {

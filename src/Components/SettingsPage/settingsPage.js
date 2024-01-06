@@ -7,6 +7,8 @@ import {
   faPalette,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import { themeClasses } from "../ThemeChange/ThemeClasses";
+import { useTheme } from "styled-components";
 
 const SettingsPage = () => {
   let navigate = useNavigate();
