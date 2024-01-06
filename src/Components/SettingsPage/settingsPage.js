@@ -7,6 +7,9 @@ import {
   faPalette,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import { themeClasses } from "../ThemeChange/ThemeClasses";
+import useTheme from "../ThemeChange/UseTheme";
+import { ThemeContext } from "../ThemeChange/UseTheme";
 
 const SettingsPage = () => {
   let navigate = useNavigate();
@@ -28,7 +31,7 @@ const SettingsPage = () => {
 
   return (
     <div className="settingsPage_layout">
-      <main className="mainColor">
+      <main className={`${currentThemeClasses.mainColor1}`}>
         <div className="backbutton_usernamebox">
           <FontAwesomeIcon
             icon={faArrowLeft}
@@ -71,7 +74,7 @@ const SettingsPage = () => {
           </div>
         </div>
       </main>
-      <section className="sectionColor">
+      <section className={`${currentThemeClasses.secondaryColor1}`}>
         {isThemeHovered && (
           <div
             onMouseEnter={() => setIsThemeHovered(true)}

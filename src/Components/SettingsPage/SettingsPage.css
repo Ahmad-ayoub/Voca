@@ -4,8 +4,18 @@
   height: 100vh;
 }
 
-.mainColor {
+.mainColor1 {
   background-color: lightskyblue;
+  border: 1px solid black;
+}
+
+.mainColor2 {
+  background-color: #fd8535;
+  border: 1px solid black;
+}
+
+.mainColor3 {
+  background-color: #e6e6fa;
   border: 1px solid black;
 }
 
@@ -69,8 +79,18 @@
   font-size: 25px;
 }
 
-.sectionColor {
+.secondaryColor1 {
   background-color: lightblue;
+  z-index: 1;
+}
+
+.secondaryColor2 {
+  background-color: #fde7c9;
+  z-index: 1;
+}
+
+.secondaryColor3 {
+  background-color: #c8a2c8;
   z-index: 1;
 }
 
