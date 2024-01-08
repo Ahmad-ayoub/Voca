@@ -107,9 +107,9 @@ const SettingsPage = () => {
             onMouseLeave={() => setIsFontHovered(false)}
             className="fontSelection"
           >
-            <p className="fontonelayout">16px</p>
-            <p className="fonttwolayout">20px</p>
-            <p className="fontthreelayout">26px</p>
+            <button className="fontonelayout">16px</button>
+            <button className="fonttwolayout">20px</button>
+            <button className="fontthreelayout">26px</button>
           </div>
         )}
         <section className="user_credentials">
