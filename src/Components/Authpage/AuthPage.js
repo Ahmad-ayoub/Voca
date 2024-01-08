@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { themeClasses } from "../ThemeChange/ThemeClasses";
+import { ThemeContext } from "../ThemeChange/UseTheme";
 
 const AuthPage = () => {
   const [name, setName] = useState();
@@ -72,11 +74,15 @@ const AuthPage = () => {
       });
   };
 
+  const { theme } = useContext(ThemeContext);
+  const currentThemeClasses =
+    themeClasses[theme] || themeClasses["defaultTheme"];
+
   return (
     <div>
       <div className="pageWrapper">
         <h1 className="appTitle">Voca</h1>
-        <div className="form loginForm">
+        <div className={`form loginForm ${currentThemeClasses.mainColor}`}>
           <h2>Login</h2>
           <input
             className="form-control loginBtns"
@@ -108,7 +114,9 @@ const AuthPage = () => {
           <p>{message}</p>
         </div>
 
-        <div className="form signupForm">
+        <div
+          className={`form signupForm ${currentThemeClasses.secondaryColor}`}
+        >
           <h2>Signup</h2>
           <input
             className="form-control signupBtns"

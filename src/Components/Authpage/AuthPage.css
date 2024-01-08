@@ -29,9 +29,20 @@
 }
 
 .loginForm {
-  background: white;
   background-size: cover;
   width: 50%;
+}
+
+.mainColor1 {
+  background-color: lightskyblue;
+}
+
+.mainColor2 {
+  background-color: #fd8535;
+}
+
+.mainColor3 {
+  background-color: #e6e6fa;
 }
 
 .loginBtns {
@@ -40,9 +51,21 @@
 }
 
 .signupForm {
-  background: lightblue center;
+  background: center;
   background-size: cover;
   width: 50%;
+}
+
+.secondaryColor1 {
+  background-color: lightblue;
+}
+
+.secondaryColor2 {
+  background-color: #fde7c9;
+}
+
+.secondaryColor3 {
+  background-color: #c8a2c8;
 }
 
 .signupBtns {
