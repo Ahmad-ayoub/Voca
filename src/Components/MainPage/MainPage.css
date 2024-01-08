@@ -28,7 +28,18 @@
   flex-wrap: wrap;
   flex-direction: column;
   height: 100vh;
+}
+
+.mainColor1 {
   background-color: lightskyblue;
+}
+
+.mainColor2 {
+  background-color: #fd8535;
+}
+
+.mainColor3 {
+  background-color: #e6e6fa;
 }
 
 .search-container {
@@ -140,8 +151,19 @@
 .input_chat_box {
   display: flex;
   flex-direction: column;
-  background-color: lightblue;
   outline: 1px solid black;
+}
+
+.secondaryColor1 {
+  background-color: lightblue;
+}
+
+.secondaryColor2 {
+  background-color: #fde7c9;
+}
+
+.secondaryColor3 {
+  background-color: #c8a2c8;
 }
 
 .chat_box {

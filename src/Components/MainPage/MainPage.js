@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import {
@@ -8,6 +8,8 @@ import {
   faUser,
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
+import { themeClasses } from "../ThemeChange/ThemeClasses";
+import { ThemeContext } from "../ThemeChange/UseTheme";
 
 const MainPage = () => {
   let navigate = useNavigate();
@@ -20,9 +22,13 @@ const MainPage = () => {
     navigate("/");
   }
 
+  const { theme } = useContext(ThemeContext);
+  const currentThemeClasses =
+    themeClasses[theme] || themeClasses["defaultTheme"];
+
   return (
     <div className="profile_and_group_box">
-      <div className="group_chat_list">
+      <div className={`group_chat_list ${currentThemeClasses.mainColor}`}>
         <div className="username_box">
           <FontAwesomeIcon
             icon={faUser}
@@ -73,7 +79,7 @@ const MainPage = () => {
           </button>
         </div>
       </div>
-      <div className="input_chat_box">
+      <div className={`input_chat_box ${currentThemeClasses.secondaryColor}`}>
         <div className="group_box">
           <FontAwesomeIcon icon={faUserGroup} className="profile_box_image" />
           <p className="profile_box_text">Group #1</p>
