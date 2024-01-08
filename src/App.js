@@ -8,17 +8,20 @@ import MainPage from "./Components/MainPage/MainPage";
 import AuthPage from "./Components/AuthPage/AuthPage";
 import SettingsPage from "./Components/SettingsPage/settingsPage";
 import { ThemeProvider } from "./Components/ThemeChange/UseTheme";
+import { FontProvider } from "./Components/FontChange/FontChange";
 
 function App() {
   return (
     <Router>
-      <ThemeProvider>
-        <Routes>
-          <Route path="/" element={<AuthPage />} index />
-          <Route path="/MainPage" element={<MainPage />} />
-          <Route path="/SettingsPage" element={<SettingsPage />} />
-        </Routes>
-      </ThemeProvider>
+      <FontProvider>
+        <ThemeProvider>
+          <Routes>
+            <Route path="/" element={<AuthPage />} index />
+            <Route path="/MainPage" element={<MainPage />} />
+            <Route path="/SettingsPage" element={<SettingsPage />} />
+          </Routes>
+        </ThemeProvider>
+      </FontProvider>
     </Router>
   );
 }
