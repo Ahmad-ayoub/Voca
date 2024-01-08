@@ -182,6 +182,7 @@
 
 .themeonelayout {
   border-bottom: 1px solid #000000;
+  background-color: lightskyblue;
   margin: 0;
 }
 
@@ -191,11 +192,13 @@
 
 .themetwolayout {
   border-bottom: 1px solid #000000;
+  background-color: lightskyblue;
   margin: 0;
 }
 
 .themethreelayout {
   margin: 0;
+  background-color: lightskyblue;
 }
 
 .themetwolayout:hover {
