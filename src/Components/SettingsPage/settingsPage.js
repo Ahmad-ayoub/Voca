@@ -31,7 +31,7 @@ const SettingsPage = () => {
 
   return (
     <div className="settingsPage_layout">
-      <main className={`${currentThemeClasses.mainColor1}`}>
+      <main className={`${currentThemeClasses.mainColor}`}>
         <div className="backbutton_usernamebox">
           <FontAwesomeIcon
             icon={faArrowLeft}
@@ -74,7 +74,7 @@ const SettingsPage = () => {
           </div>
         </div>
       </main>
-      <section className={`${currentThemeClasses.secondaryColor1}`}>
+      <section className={`${currentThemeClasses.secondaryColor}`}>
         {isThemeHovered && (
           <div
             onMouseEnter={() => setIsThemeHovered(true)}
