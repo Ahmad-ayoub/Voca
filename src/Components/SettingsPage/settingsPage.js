@@ -36,7 +36,7 @@ const SettingsPage = () => {
     FontClasses[fontsize] || FontClasses["fontDefault"];
 
   return (
-    <div className="settingsPage_layout">
+    <div className={`settingsPage_layout ${currentFontClasses}`}>
       <main className={`${currentThemeClasses.mainColor}`}>
         <div className="backbutton_usernamebox">
           <FontAwesomeIcon
