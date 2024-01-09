@@ -30,10 +30,10 @@ const SettingsPage = () => {
   const { changeTheme } = useTheme();
   const currentThemeClasses =
     themeClasses[theme] || themeClasses["defaultTheme"];
-  const { fontsize } = useContext(FontContext);
+  const { fontSize } = useContext(FontContext);
   const { setFontSize } = useFont();
   const currentFontClasses =
-    FontClasses[fontsize] || FontClasses["fontDefault"];
+    FontClasses[fontSize] || FontClasses["fontDefault"];
 
   return (
     <div className={`settingsPage_layout ${currentFontClasses}`}>

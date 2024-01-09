@@ -5,7 +5,7 @@ const FontContext = createContext();
 export const useFont = () => useContext(FontContext);
 
 export const FontProvider = ({ children }) => {
-  const [fontSize, setFontSize] = useState("defaultSize"); // default size
+  const [fontSize, setFontSize] = useState();
 
   return (
     <FontContext.Provider value={{ fontSize, setFontSize }}>
