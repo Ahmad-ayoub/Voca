@@ -117,19 +117,19 @@ const SettingsPage = () => {
               className="fontonelayout"
               onClick={() => setFontSize("small")}
             >
-              16px
+              Small
             </button>
             <button
               className="fonttwolayout"
               onClick={() => setFontSize("default")}
             >
-              20px
+              Default
             </button>
             <button
               className="fontthreelayout"
               onClick={() => setFontSize("large")}
             >
-              26px
+              Large
             </button>
           </div>
         )}
