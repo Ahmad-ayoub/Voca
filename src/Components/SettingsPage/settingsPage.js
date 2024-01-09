@@ -10,6 +10,8 @@ import {
 import { themeClasses } from "../ThemeChange/ThemeClasses";
 import useTheme from "../ThemeChange/UseTheme";
 import { ThemeContext } from "../ThemeChange/UseTheme";
+import { FontClasses } from "../FontChange/FontClasses";
+import FontContext, { useFont } from "../FontChange/FontChange";
 
 const SettingsPage = () => {
   let navigate = useNavigate();
@@ -28,6 +30,10 @@ const SettingsPage = () => {
   const { changeTheme } = useTheme();
   const currentThemeClasses =
     themeClasses[theme] || themeClasses["defaultTheme"];
+  const { fontsize } = useContext(FontContext);
+  const { setFontSize } = useFont();
+  const currentFontClasses =
+    FontClasses[fontsize] || FontClasses["fontDefault"];
 
   return (
     <div className="settingsPage_layout">
@@ -107,9 +113,24 @@ const SettingsPage = () => {
             onMouseLeave={() => setIsFontHovered(false)}
             className="fontSelection"
           >
-            <button className="fontonelayout">16px</button>
-            <button className="fonttwolayout">20px</button>
-            <button className="fontthreelayout">26px</button>
+            <button
+              className="fontonelayout"
+              onClick={() => setFontSize("small")}
+            >
+              16px
+            </button>
+            <button
+              className="fonttwolayout"
+              onClick={() => setFontSize("default")}
+            >
+              20px
+            </button>
+            <button
+              className="fontthreelayout"
+              onClick={() => setFontSize("large")}
+            >
+              26px
+            </button>
           </div>
         )}
         <section className="user_credentials">
