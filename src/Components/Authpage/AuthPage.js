@@ -84,12 +84,10 @@ const AuthPage = () => {
     FontClasses[fontSize] || FontClasses["fontDefault"];
 
   return (
-    <div>
+    <div className={`${currentFontClasses}`}>
       <div className="pageWrapper">
         <h1 className="appTitle">Voca</h1>
-        <div
-          className={`form loginForm ${currentThemeClasses.mainColor} ${currentFontClasses}`}
-        >
+        <div className={`form loginForm ${currentThemeClasses.mainColor}`}>
           <h2>Login</h2>
           <input
             className="form-control loginBtns"
