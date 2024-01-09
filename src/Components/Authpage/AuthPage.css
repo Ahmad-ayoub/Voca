@@ -72,3 +72,15 @@
   margin-bottom: 10px;
   width: 50%;
 }
+
+.fontSmall {
+  font-size: 14px;
+}
+
+.fontDefault {
+  font-size: 16px;
+}
+
+.fontLarge {
+  font-size: 18px;
+}

@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { themeClasses } from "../ThemeChange/ThemeClasses";
 import { ThemeContext } from "../ThemeChange/UseTheme";
+import { FontClasses } from "../FontChange/FontClasses";
+import FontContext from "../FontChange/FontChange";
 
 const AuthPage = () => {
   const [name, setName] = useState();
@@ -77,12 +79,17 @@ const AuthPage = () => {
   const { theme } = useContext(ThemeContext);
   const currentThemeClasses =
     themeClasses[theme] || themeClasses["defaultTheme"];
+  const { fontSize } = useContext(FontContext);
+  const currentFontClasses =
+    FontClasses[fontSize] || FontClasses["fontDefault"];
 
   return (
     <div>
       <div className="pageWrapper">
         <h1 className="appTitle">Voca</h1>
-        <div className={`form loginForm ${currentThemeClasses.mainColor}`}>
+        <div
+          className={`form loginForm ${currentThemeClasses.mainColor} ${currentFontClasses}`}
+        >
           <h2>Login</h2>
           <input
             className="form-control loginBtns"

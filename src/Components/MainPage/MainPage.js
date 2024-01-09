@@ -10,6 +10,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { themeClasses } from "../ThemeChange/ThemeClasses";
 import { ThemeContext } from "../ThemeChange/UseTheme";
+import { FontClasses } from "../FontChange/FontClasses";
+import FontContext from "../FontChange/FontChange";
 
 const MainPage = () => {
   let navigate = useNavigate();
@@ -25,10 +27,15 @@ const MainPage = () => {
   const { theme } = useContext(ThemeContext);
   const currentThemeClasses =
     themeClasses[theme] || themeClasses["defaultTheme"];
+  const { fontSize } = useContext(FontContext);
+  const currentFontClasses =
+    FontClasses[fontSize] || FontClasses["fontDefault"];
 
   return (
     <div className="profile_and_group_box">
-      <div className={`group_chat_list ${currentThemeClasses.mainColor}`}>
+      <div
+        className={`group_chat_list ${currentThemeClasses.mainColor} ${currentFontClasses}`}
+      >
         <div className="username_box">
           <FontAwesomeIcon
             icon={faUser}
